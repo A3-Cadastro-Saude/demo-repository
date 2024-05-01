@@ -17,21 +17,15 @@ public class TelaCadUsu extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
         txtNome = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
         txtEmail = new javax.swing.JTextField();
         txtUsuario = new javax.swing.JTextField();
-        jLabel4 = new javax.swing.JLabel();
         txtSenha = new javax.swing.JPasswordField();
         ckAdm = new javax.swing.JCheckBox();
         txtConfSenha = new javax.swing.JPasswordField();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
         ckSenha = new javax.swing.JCheckBox();
         jSeparator1 = new javax.swing.JSeparator();
+        jLabel8 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         btSair = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
@@ -45,70 +39,52 @@ public class TelaCadUsu extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
 
-        jLabel1.setText("Nome");
-        getContentPane().add(jLabel1);
-        jLabel1.setBounds(80, 40, 53, 16);
-
-        txtNome.setText("txtNome");
+        txtNome.setBorder(null);
         getContentPane().add(txtNome);
-        txtNome.setBounds(180, 40, 182, 22);
+        txtNome.setBounds(115, 160, 136, 16);
 
-        jLabel2.setText("E-mail");
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(80, 80, 37, 16);
-
-        jLabel3.setText("Usuário");
-        getContentPane().add(jLabel3);
-        jLabel3.setBounds(80, 120, 68, 16);
-
-        txtEmail.setText("txtEmail");
+        txtEmail.setBorder(null);
         getContentPane().add(txtEmail);
-        txtEmail.setBounds(180, 80, 182, 22);
+        txtEmail.setBounds(115, 270, 136, 16);
 
-        txtUsuario.setText("txtUsuario");
+        txtUsuario.setBorder(null);
         getContentPane().add(txtUsuario);
-        txtUsuario.setBounds(180, 120, 182, 22);
+        txtUsuario.setBounds(115, 214, 136, 16);
 
-        jLabel4.setText("Senha");
-        getContentPane().add(jLabel4);
-        jLabel4.setBounds(80, 160, 70, 16);
+        txtSenha.setBorder(null);
         getContentPane().add(txtSenha);
-        txtSenha.setBounds(180, 160, 180, 22);
+        txtSenha.setBounds(115, 323, 136, 16);
 
-        ckAdm.setText("Administrador   -  ckAdm");
+        ckAdm.setForeground(new java.awt.Color(255, 255, 255));
+        ckAdm.setText("Administrador");
         getContentPane().add(ckAdm);
-        ckAdm.setBounds(80, 270, 160, 20);
+        ckAdm.setBounds(140, 440, 100, 20);
 
+        txtConfSenha.setBorder(null);
         txtConfSenha.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtConfSenhaActionPerformed(evt);
             }
         });
         getContentPane().add(txtConfSenha);
-        txtConfSenha.setBounds(180, 200, 180, 22);
+        txtConfSenha.setBounds(115, 377, 136, 16);
 
-        jLabel5.setText("Confimar Senha");
-        getContentPane().add(jLabel5);
-        jLabel5.setBounds(80, 200, 90, 16);
-
-        jLabel6.setText("txtSenha");
-        getContentPane().add(jLabel6);
-        jLabel6.setBounds(200, 180, 100, 16);
-
-        jLabel7.setText("txtConfSenha");
-        getContentPane().add(jLabel7);
-        jLabel7.setBounds(200, 220, 110, 16);
-
-        ckSenha.setText("Exibir Senha    -  ckSenha");
+        ckSenha.setForeground(new java.awt.Color(255, 255, 255));
+        ckSenha.setText("Exibir Senha");
+        ckSenha.setActionCommand("Exibir Senha");
         ckSenha.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ckSenhaActionPerformed(evt);
             }
         });
         getContentPane().add(ckSenha);
-        ckSenha.setBounds(80, 240, 180, 20);
+        ckSenha.setBounds(140, 410, 90, 20);
         getContentPane().add(jSeparator1);
         jSeparator1.setBounds(50, 60, 0, 3);
+
+        jLabel8.setIcon(new javax.swing.ImageIcon("C:\\Users\\Bruno\\Desktop\\Nome_3.png")); // NOI18N
+        getContentPane().add(jLabel8);
+        jLabel8.setBounds(0, 0, 400, 580);
 
         jButton1.setText("Salvar");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -117,7 +93,7 @@ public class TelaCadUsu extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(290, 310, 80, 50);
+        jButton1.setBounds(130, 473, 120, 20);
 
         btSair.setText("Sair");
         btSair.addActionListener(new java.awt.event.ActionListener() {
@@ -126,7 +102,7 @@ public class TelaCadUsu extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btSair);
-        btSair.setBounds(120, 310, 90, 50);
+        btSair.setBounds(150, 514, 80, 20);
 
         jMenu1.setText("Arquivo");
 
@@ -154,7 +130,7 @@ public class TelaCadUsu extends javax.swing.JFrame {
 
         setJMenuBar(jMenuBar1);
 
-        setSize(new java.awt.Dimension(486, 436));
+        setSize(new java.awt.Dimension(416, 608));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -271,13 +247,7 @@ public class TelaCadUsu extends javax.swing.JFrame {
     private javax.swing.JCheckBox ckAdm;
     private javax.swing.JCheckBox ckSenha;
     private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;

@@ -26,6 +26,10 @@ public class TelaMenu extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel1 = new javax.swing.JLabel();
+        usuariomenu = new javax.swing.JButton();
+        medicomenu = new javax.swing.JButton();
+        admmenu = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         menuCadastro = new javax.swing.JMenu();
         menuUsuarios = new javax.swing.JMenuItem();
@@ -35,6 +39,28 @@ public class TelaMenu extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setExtendedState(getExtendedState());
         setName("menu"); // NOI18N
+        getContentPane().setLayout(null);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Bruno\\Desktop\\LOGING_2.png")); // NOI18N
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(0, 0, 900, 580);
+
+        usuariomenu.setText("Usuario");
+        usuariomenu.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                usuariomenuActionPerformed(evt);
+            }
+        });
+        getContentPane().add(usuariomenu);
+        usuariomenu.setBounds(120, 241, 145, 151);
+
+        medicomenu.setText("Medico");
+        getContentPane().add(medicomenu);
+        medicomenu.setBounds(373, 242, 144, 150);
+
+        admmenu.setText("ADM");
+        getContentPane().add(admmenu);
+        admmenu.setBounds(629, 242, 144, 150);
 
         menuCadastro.setText("Cadastros");
 
@@ -62,18 +88,7 @@ public class TelaMenu extends javax.swing.JFrame {
 
         setJMenuBar(jMenuBar1);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 737, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 482, Short.MAX_VALUE)
-        );
-
-        setSize(new java.awt.Dimension(751, 539));
+        setSize(new java.awt.Dimension(905, 604));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -94,6 +109,10 @@ public class TelaMenu extends javax.swing.JFrame {
         
         // TODO add your handling code here:
     }//GEN-LAST:event_menuSairActionPerformed
+
+    private void usuariomenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_usuariomenuActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_usuariomenuActionPerformed
 
     /**
      * @param args the command line arguments
@@ -131,10 +150,14 @@ public class TelaMenu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton admmenu;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JButton medicomenu;
     private javax.swing.JMenu menuCadastro;
     private javax.swing.JMenuItem menuSair;
     private javax.swing.JMenuItem menuUsuarios;
     private javax.swing.JMenu menuopcoes;
+    private javax.swing.JButton usuariomenu;
     // End of variables declaration//GEN-END:variables
 }
