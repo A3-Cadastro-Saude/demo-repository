@@ -32,7 +32,7 @@ public class LoginTela extends javax.swing.JFrame {
         txtUsuario = new javax.swing.JTextField();
         txtSenha = new javax.swing.JPasswordField();
         ckSenha = new javax.swing.JCheckBox();
-        jLabel4 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         btLogar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -64,10 +64,9 @@ public class LoginTela extends javax.swing.JFrame {
         getContentPane().add(ckSenha);
         ckSenha.setBounds(370, 430, 140, 20);
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/TelaLogin.png"))); // NOI18N
-        jLabel4.setToolTipText("");
-        getContentPane().add(jLabel4);
-        jLabel4.setBounds(0, 0, 890, 600);
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/TelaLogin.png"))); // NOI18N
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(0, 0, 890, 600);
 
         btLogar.setText("Logar");
         btLogar.addActionListener(new java.awt.event.ActionListener() {
@@ -78,7 +77,7 @@ public class LoginTela extends javax.swing.JFrame {
         getContentPane().add(btLogar);
         btLogar.setBounds(364, 472, 163, 35);
 
-        setSize(new java.awt.Dimension(905, 604));
+        setSize(new java.awt.Dimension(905, 635));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -157,7 +156,7 @@ public class LoginTela extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btLogar;
     private javax.swing.JCheckBox ckSenha;
-    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JPasswordField txtSenha;
     private javax.swing.JTextField txtUsuario;
     // End of variables declaration//GEN-END:variables

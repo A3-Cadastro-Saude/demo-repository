@@ -38,7 +38,7 @@ public class TelaCadUsu extends javax.swing.JFrame {
         ckSenha = new javax.swing.JCheckBox();
         jSeparator1 = new javax.swing.JSeparator();
         label10 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        btSalvar = new javax.swing.JButton();
         btSair = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
@@ -57,25 +57,25 @@ public class TelaCadUsu extends javax.swing.JFrame {
             }
         });
         getContentPane().add(txtNome);
-        txtNome.setBounds(112, 160, 140, 16);
+        txtNome.setBounds(112, 160, 140, 14);
 
         txtUsuario.setBorder(null);
         getContentPane().add(txtUsuario);
-        txtUsuario.setBounds(112, 214, 140, 16);
+        txtUsuario.setBounds(112, 214, 140, 14);
 
         txtEmail.setBorder(null);
         getContentPane().add(txtEmail);
-        txtEmail.setBounds(111, 270, 140, 16);
+        txtEmail.setBounds(111, 270, 140, 14);
 
         txtSenha.setBorder(null);
         getContentPane().add(txtSenha);
-        txtSenha.setBounds(112, 323, 140, 16);
+        txtSenha.setBounds(112, 323, 140, 14);
 
         ckAdm.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         ckAdm.setForeground(new java.awt.Color(255, 255, 255));
         ckAdm.setText("Administrador");
         getContentPane().add(ckAdm);
-        ckAdm.setBounds(130, 434, 110, 24);
+        ckAdm.setBounds(130, 434, 110, 29);
 
         txtConfSenha.setBorder(null);
         txtConfSenha.addActionListener(new java.awt.event.ActionListener() {
@@ -84,7 +84,7 @@ public class TelaCadUsu extends javax.swing.JFrame {
             }
         });
         getContentPane().add(txtConfSenha);
-        txtConfSenha.setBounds(112, 377, 140, 16);
+        txtConfSenha.setBounds(112, 377, 140, 14);
 
         ckSenha.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         ckSenha.setForeground(new java.awt.Color(255, 255, 255));
@@ -97,20 +97,20 @@ public class TelaCadUsu extends javax.swing.JFrame {
         getContentPane().add(ckSenha);
         ckSenha.setBounds(130, 410, 100, 20);
         getContentPane().add(jSeparator1);
-        jSeparator1.setBounds(50, 60, 0, 3);
+        jSeparator1.setBounds(50, 60, 0, 2);
 
         label10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/telaCad.png"))); // NOI18N
         getContentPane().add(label10);
         label10.setBounds(0, 0, 400, 580);
 
-        jButton1.setText("Salvar");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btSalvar.setText("Salvar");
+        btSalvar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btSalvarActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1);
-        jButton1.setBounds(132, 472, 120, 22);
+        getContentPane().add(btSalvar);
+        btSalvar.setBounds(132, 472, 120, 22);
 
         btSair.setText("Sair");
         btSair.addActionListener(new java.awt.event.ActionListener() {
@@ -163,16 +163,38 @@ public class TelaCadUsu extends javax.swing.JFrame {
         
     }//GEN-LAST:event_ckSenhaActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btSalvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btSalvarActionPerformed
         // TODO add your handling code here:
         Usuario usu = new Usuario();
         
+        String senha, confsenha;
+        
+        senha = txtSenha.getText();
+        confsenha = txtConfSenha.getText();
+        
+        if(txtNome.getText() .isEmpty())
+            JOptionPane.showMessageDialog(null, "Campo Nome invalido!");
+        else
         usu.setNome(txtNome.getText());
+                       
+        if(senha.equals(confsenha) && !senha.isEmpty()) {
+            usu.setSenha(senha);
+            JOptionPane.showMessageDialog(null, "Cadastro realizado com sucesso!");
+        } 
+        else { JOptionPane.showMessageDialog(null, "Campo senha invalido!");
+        }
+        
         usu.setEmail(txtEmail.getText());
+        
         usu.setUsuario(txtUsuario.getText());
         
+        if(ckAdm.isSelected())
+            usu.setAdm(1);
+        else
+            usu.setAdm(0);
+        
         usu.inserir();
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btSalvarActionPerformed
 
     private void txtNomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNomeActionPerformed
         // TODO add your handling code here:
@@ -221,9 +243,9 @@ public class TelaCadUsu extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btSair;
+    private javax.swing.JButton btSalvar;
     private javax.swing.JCheckBox ckAdm;
     private javax.swing.JCheckBox ckSenha;
-    private javax.swing.JButton jButton1;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
