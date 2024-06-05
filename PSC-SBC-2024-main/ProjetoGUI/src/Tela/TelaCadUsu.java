@@ -1,16 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+
 package Tela;
 
 import Classes.Usuario;
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author erica
- */
+
 public class TelaCadUsu extends javax.swing.JFrame {
 
     /**
@@ -29,16 +23,22 @@ public class TelaCadUsu extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel1 = new javax.swing.JLabel();
         txtNome = new javax.swing.JTextField();
-        txtUsuario = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
         txtEmail = new javax.swing.JTextField();
+        txtUsuario = new javax.swing.JTextField();
+        jLabel4 = new javax.swing.JLabel();
         txtSenha = new javax.swing.JPasswordField();
         ckAdm = new javax.swing.JCheckBox();
         txtConfSenha = new javax.swing.JPasswordField();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
         ckSenha = new javax.swing.JCheckBox();
         jSeparator1 = new javax.swing.JSeparator();
-        label10 = new javax.swing.JLabel();
-        btSalvar = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
         btSair = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
@@ -50,67 +50,79 @@ public class TelaCadUsu extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
 
-        txtNome.setBorder(null);
+        jLabel1.setText("Nome");
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(70, 70, 53, 16);
+
         txtNome.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtNomeActionPerformed(evt);
             }
         });
         getContentPane().add(txtNome);
-        txtNome.setBounds(112, 160, 140, 14);
+        txtNome.setBounds(150, 70, 182, 22);
 
-        txtUsuario.setBorder(null);
-        getContentPane().add(txtUsuario);
-        txtUsuario.setBounds(112, 214, 140, 14);
+        jLabel2.setText("E-mail");
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(70, 110, 37, 16);
 
-        txtEmail.setBorder(null);
+        jLabel3.setText("Usuário");
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(60, 150, 68, 16);
         getContentPane().add(txtEmail);
-        txtEmail.setBounds(111, 270, 140, 14);
+        txtEmail.setBounds(150, 110, 182, 22);
+        getContentPane().add(txtUsuario);
+        txtUsuario.setBounds(150, 150, 182, 22);
 
-        txtSenha.setBorder(null);
+        jLabel4.setText("Senha");
+        getContentPane().add(jLabel4);
+        jLabel4.setBounds(60, 190, 70, 16);
         getContentPane().add(txtSenha);
-        txtSenha.setBounds(112, 323, 140, 14);
+        txtSenha.setBounds(150, 190, 180, 22);
 
-        ckAdm.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        ckAdm.setForeground(new java.awt.Color(255, 255, 255));
-        ckAdm.setText("Administrador");
+        ckAdm.setText("Administrador   -  ckAdm");
         getContentPane().add(ckAdm);
-        ckAdm.setBounds(130, 434, 110, 29);
+        ckAdm.setBounds(140, 350, 160, 20);
 
-        txtConfSenha.setBorder(null);
         txtConfSenha.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtConfSenhaActionPerformed(evt);
             }
         });
         getContentPane().add(txtConfSenha);
-        txtConfSenha.setBounds(112, 377, 140, 14);
+        txtConfSenha.setBounds(150, 240, 180, 22);
 
-        ckSenha.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        ckSenha.setForeground(new java.awt.Color(255, 255, 255));
-        ckSenha.setText("Exibir Senha");
+        jLabel5.setText("Confimar Senha");
+        getContentPane().add(jLabel5);
+        jLabel5.setBounds(40, 240, 90, 16);
+
+        jLabel6.setText("txtSenha");
+        getContentPane().add(jLabel6);
+        jLabel6.setBounds(150, 220, 100, 16);
+
+        jLabel7.setText("txtConfSenha");
+        getContentPane().add(jLabel7);
+        jLabel7.setBounds(150, 270, 110, 16);
+
+        ckSenha.setText("Exibir Senha    -  ckSenha");
         ckSenha.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ckSenhaActionPerformed(evt);
             }
         });
         getContentPane().add(ckSenha);
-        ckSenha.setBounds(130, 410, 100, 20);
+        ckSenha.setBounds(140, 310, 180, 20);
         getContentPane().add(jSeparator1);
-        jSeparator1.setBounds(50, 60, 0, 2);
+        jSeparator1.setBounds(50, 60, 0, 3);
 
-        label10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/telaCad.png"))); // NOI18N
-        getContentPane().add(label10);
-        label10.setBounds(0, 0, 400, 580);
-
-        btSalvar.setText("Salvar");
-        btSalvar.addActionListener(new java.awt.event.ActionListener() {
+        jButton1.setText("Salvar");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btSalvarActionPerformed(evt);
+                jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(btSalvar);
-        btSalvar.setBounds(132, 472, 120, 22);
+        getContentPane().add(jButton1);
+        jButton1.setBounds(60, 410, 80, 50);
 
         btSair.setText("Sair");
         btSair.addActionListener(new java.awt.event.ActionListener() {
@@ -119,7 +131,7 @@ public class TelaCadUsu extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btSair);
-        btSair.setBounds(153, 513, 76, 22);
+        btSair.setBounds(210, 410, 100, 50);
 
         jMenu1.setText("Arquivo");
 
@@ -163,46 +175,49 @@ public class TelaCadUsu extends javax.swing.JFrame {
         
     }//GEN-LAST:event_ckSenhaActionPerformed
 
-    private void btSalvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btSalvarActionPerformed
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         Usuario usu = new Usuario();
         
-        String senha, confsenha;
+        String senha, confSenha; 
         
-        senha = txtSenha.getText();
-        confsenha = txtConfSenha.getText();
-        
-        if(txtNome.getText() .isEmpty())
-            JOptionPane.showMessageDialog(null, "Campo Nome invalido!");
+        if (txtNome.getText() .isEmpty())
+            JOptionPane.showMessageDialog(null, "Campo nome invalido!");
         else
         usu.setNome(txtNome.getText());
-                       
-        if(senha.equals(confsenha) && !senha.isEmpty()) {
-            usu.setSenha(senha);
-            JOptionPane.showMessageDialog(null, "Cadastro realizado com sucesso!");
-        } 
-        else { JOptionPane.showMessageDialog(null, "Campo senha invalido!");
-        }
-        
+             
         usu.setEmail(txtEmail.getText());
-        
         usu.setUsuario(txtUsuario.getText());
         
-        if(ckAdm.isSelected())
-            usu.setAdm(1);
+        senha = txtSenha.getText();
+        confSenha = txtConfSenha.getText();
+        
+        if (senha.equals(confSenha) && !senha.isEmpty()){
+            usu.setSenha(senha);
+            
+        }
+        else{
+            JOptionPane.showMessageDialog(null, "Campo Usuariosenha invalido!");
+        }
+        
+        if (ckAdm.isSelected())
+            usu.setAdm(true);
         else
-            usu.setAdm(0);
+            usu.setAdm(false);
+        
+        
         
         usu.inserir();
-    }//GEN-LAST:event_btSalvarActionPerformed
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     private void txtNomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNomeActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtNomeActionPerformed
 
     private void btSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btSairActionPerformed
-        
+
         dispose();
+
         // TODO add your handling code here:
     }//GEN-LAST:event_btSairActionPerformed
 
@@ -243,9 +258,16 @@ public class TelaCadUsu extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btSair;
-    private javax.swing.JButton btSalvar;
     private javax.swing.JCheckBox ckAdm;
     private javax.swing.JCheckBox ckSenha;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
@@ -253,7 +275,6 @@ public class TelaCadUsu extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JLabel label10;
     private javax.swing.JPasswordField txtConfSenha;
     private javax.swing.JTextField txtEmail;
     private javax.swing.JTextField txtNome;

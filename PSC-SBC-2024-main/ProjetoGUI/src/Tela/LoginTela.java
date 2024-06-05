@@ -1,16 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+
 package Tela;
 
 import DAO.ConnectionFactory;
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author erica
- */
 public class LoginTela extends javax.swing.JFrame {
 
     /**
@@ -32,7 +25,6 @@ public class LoginTela extends javax.swing.JFrame {
         txtUsuario = new javax.swing.JTextField();
         txtSenha = new javax.swing.JPasswordField();
         ckSenha = new javax.swing.JCheckBox();
-        jLabel1 = new javax.swing.JLabel();
         btLogar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -42,15 +34,13 @@ public class LoginTela extends javax.swing.JFrame {
         setType(java.awt.Window.Type.UTILITY);
         getContentPane().setLayout(null);
 
-        txtUsuario.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txtUsuario.setBorder(null);
         getContentPane().add(txtUsuario);
-        txtUsuario.setBounds(320, 265, 205, 40);
+        txtUsuario.setBounds(315, 265, 210, 40);
 
-        txtSenha.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txtSenha.setBorder(null);
         getContentPane().add(txtSenha);
-        txtSenha.setBounds(320, 369, 205, 40);
+        txtSenha.setBounds(315, 369, 210, 40);
 
         ckSenha.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         ckSenha.setForeground(new java.awt.Color(255, 255, 255));
@@ -62,11 +52,7 @@ public class LoginTela extends javax.swing.JFrame {
             }
         });
         getContentPane().add(ckSenha);
-        ckSenha.setBounds(370, 430, 140, 20);
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/TelaLogin.png"))); // NOI18N
-        getContentPane().add(jLabel1);
-        jLabel1.setBounds(0, 0, 890, 600);
+        ckSenha.setBounds(370, 430, 170, 29);
 
         btLogar.setText("Logar");
         btLogar.addActionListener(new java.awt.event.ActionListener() {
@@ -75,9 +61,9 @@ public class LoginTela extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btLogar);
-        btLogar.setBounds(364, 472, 163, 35);
+        btLogar.setBounds(364, 472, 165, 35);
 
-        setSize(new java.awt.Dimension(905, 635));
+        setSize(new java.awt.Dimension(905, 604));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -156,7 +142,6 @@ public class LoginTela extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btLogar;
     private javax.swing.JCheckBox ckSenha;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JPasswordField txtSenha;
     private javax.swing.JTextField txtUsuario;
     // End of variables declaration//GEN-END:variables

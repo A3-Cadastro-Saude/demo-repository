@@ -19,12 +19,12 @@ public class ConnectionFactory {
             + "?serverTimezone=UTC",          
             usuario,
             senha);
-            System.out.println("Conexão Efetuada!!");
+            System.out.println("Conexao Efetuada!!");
             return c;
         }
         catch (Exception e){
             e.printStackTrace();
-            System.out.println("ERRO. NÃO CONECTOU!!!");
+            System.out.println("ERRO. NAO CONECTOU!!!");
             return null;
         }
     }
