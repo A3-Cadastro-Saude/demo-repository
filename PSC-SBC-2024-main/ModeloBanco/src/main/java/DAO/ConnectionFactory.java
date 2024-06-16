@@ -9,7 +9,7 @@ public class ConnectionFactory {
     private String senha = "root";
     private String host = "localhost";
     private String porta = "3306";
-    private String bd = "db_pessoas";
+    private String bd = "db_usuario";
     
     public Connection obtemConexao (){
     

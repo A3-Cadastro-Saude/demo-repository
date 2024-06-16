@@ -9,13 +9,13 @@ public class ConnectionFactory {
     private String senha = "root";
     private String host = "localhost";
     private String porta = "3306";
-    private String bd = "db_pessoas";
+    private String db = "db_usuario";
     
     public Connection obtemConexao (){
     
         try{
             Connection c = DriverManager.getConnection(
-            "jdbc:mysql://" + host + ":" + porta + "/" + bd
+            "jdbc:mysql://" + host + ":" + porta + "/" + db
             + "?serverTimezone=UTC",          
             usuario,
             senha);

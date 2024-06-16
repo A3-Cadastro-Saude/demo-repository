@@ -170,7 +170,7 @@ public class Usuario {
     
     public void inserir(){
     
-    String sql = "INSERT INTO tb_pessoa(nome, fone, email) VALUES (?, ?, ?)";
+    String sql = "INSERT INTO tb_usuario(nome, usuario, email) VALUES (?, ?, ?)";
     ConnectionFactory factory = new ConnectionFactory();
     
     try (Connection c = factory.obtemConexao()){
@@ -188,7 +188,7 @@ public class Usuario {
     }
     public void atualizar(){
         
-    String sql = "UPDATE tb_pessoa SET (nome, fone, email) WHERE (?, ?, ?)";
+    String sql = "UPDATE tb_usuario SET (nome, usuario, email) WHERE (?, ?, ?)";
     //2: Abrir uma conexão
     ConnectionFactory factory = new ConnectionFactory();
 
